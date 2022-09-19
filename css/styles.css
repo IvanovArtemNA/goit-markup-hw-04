@@ -9,6 +9,7 @@
     --footer-backgroud-color: #2F303A;
     --background-section-color: #F5F4FA;
     --border-color: #EEEEEE;
+    --color-icons: #AFB1B8;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+    outline: 1px solid purple;
     }
 
 .section {
@@ -124,8 +126,20 @@ header {
 .main {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: var(--footer-backgroud-color);
     text-align: center;
+}
+
+.overlay {
+    height: 600px;
+    outline: 5px solid rgb(194, 47, 194);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/main-background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #c4c4c4;
 }
 
 .main-title {
@@ -440,4 +454,50 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+/* ИКОНКИ НАШИ ПЛЮСЫ */
+
+.plusesicons {
+    background-color: var(--background-section-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.pluses-icons {
+    width: 70px;
+    height: 70px;
+    margin: 25px 100px 25px 100px;
+}
+
+/* НОВАЯ СЕКЦИЯ */
+
+.page-clients {
+    display: flex;
+    gap: 30px;
+}
+
+.logo-clients {
+    width: 106px;
+    height: 60px;
+    fill: var(--color-icons);
+}
+
+.logo-clients:hover,
+.logo-clients:focus {
+    fill: var(--interactive-color);
+}
+
+.container-icon {
+    padding: 16px 32px 16px 32px;
+    border: 1px solid var(--color-icons);
+    border-radius: 4px;
+    cursor: pointer;
+    width: 170px;
+    height: 92px;
+}
+
+.container-icon:hover,
+.container-icon:focus {
+    border-color: var(--interactive-color);
 }
