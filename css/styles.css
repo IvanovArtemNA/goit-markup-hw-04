@@ -342,6 +342,7 @@ header {
 
 .link-portfolio {
     display: block;
+    text-decoration: none;
 }
 
 .link-portfolio:hover {
