@@ -229,8 +229,8 @@ header {
 
 .list {
     display: flex;
-    padding: initial;
-    list-style: none;
+   /*padding: initial;/*
+    /*list-style: none;*/
 }
 
 .item {
@@ -250,7 +250,6 @@ header {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    margin-top: 30px;
 }
 
 .profession {
@@ -258,6 +257,15 @@ header {
     font-size: 16px;
     line-height: 1.19;
     margin-top: 10px;
+}
+
+.team-contacts {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.list-contacts {
+    width: 44px;
 }
 
 /* СЕКЦИЯ 5 (Кнопки) */
@@ -332,7 +340,11 @@ header {
     border-bottom: 1px solid var(--border-color);
 }
 
-.lifive:hover {
+.link-portfolio {
+    display: block;
+}
+
+.link-portfolio:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -351,7 +363,7 @@ header {
 }
 
 .lifooter {
-    line-height: 24px;
+    margin-bottom: 9px;
     list-style: none;
 }
 
@@ -377,18 +389,17 @@ header {
 /* КОНТАКТЫ */
 
 .contacts-header {
+    display: flex;
     color: var(--secondary-text-color);
     letter-spacing: 0.02em;
     text-decoration: none;
+    fill: currentColor;
+    align-items: center;  
 }
 
 .contacts-header:hover,
-.contacts-header:focus {
-    color: var(--interactive-color);
-}
-
-.contacts-footer:hover,
-.contacts-footer:focus {
+.contacts-header:focus {  
+    fill: var(--interactive-color);
     color: var(--interactive-color);
 }
 
@@ -396,6 +407,12 @@ header {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
     font-weight: normal;
+    display: block;
+}
+
+.contacts-footer:hover,
+.contacts-footer:focus {
+    color: var(--interactive-color);
 }
 
 /* КНОПКИ */
@@ -463,78 +480,72 @@ img {
     background-color: var(--background-section-color);
     border-radius: 4px;
     margin-bottom: 30px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.pluses-icons {
-    margin: 25px 100px 25px 100px;
-}
-
-/* НОВАЯ СЕКЦИЯ */
+/* СЕКЦИЯ ПОСТОЯННЫХ КЛИЕНТОВ */
 
 .page-clients {
     display: flex;
     gap: 30px; 
 }
 
-.logo-clients {
-    fill: var(--color-icons);
-    width: 106px;
-    height: 60px;
-}
-
-.logo-clients:hover,
-.logo-clients:focus {
-    fill: var(--interactive-color);
-}
-
-.container-icon {
+.link-clients {
+    display: block;
     border: 1px solid var(--color-icons);
     border-radius: 4px;
     cursor: pointer;
     width: 170px;
     height: 92px;
-    padding: 16px 32px 16px 32px;
+    fill: var(--color-icons);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-icon:hover,
-.container-icon:focus {
-    border-color: var(--interactive-color);
+.link-clients:hover,
+.link-clients:focus {
     fill: var(--interactive-color);
+    border-color: var(--interactive-color);
 }
 
 /* ИКОНКИ СОЦ СЕТЕЙ */
 
 .social {
-    margin: 16px 32px 30px 32px;
     display: flex;
+    justify-content:center;
     gap: 10px;
+    padding-top: 16px;
 }
 
 .social-link {
     fill: var(--color-icons);
-    padding: 12px;
     height: 44px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2196F3;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
 
 .social-link:hover,
 .social-link:focus {
     fill: var(--background-text-color);
     background-color: var(--interactive-color);
-    border-radius: 50%; 
+    border-radius: 50%;
 }
 
 /* Иконки контактов */ 
 
 
 .icon-contacts {
-    fill:  var(--secondary-text-color);
     margin-right: 10px;
     padding-top: 1px;    
-}
-
-.icon-contacts:hover, 
-.icon-contacts:focus {
-    fill: var(--interactive-color)
 }
 
 .mail:hover,
@@ -554,27 +565,21 @@ img {
     color: var(--background-text-color); 
 }
 
-.social-footer { 
-    width: 206px;
-    padding-top: 12px;
-    margin-bottom: 0;
-}
-
 .divfooter {
     display: flex;
-    gap: 80px
+    align-items: baseline;
 }
 
-.links {
-    margin-left: 0;
+.social-list {
+    width: 44px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 10px;
     margin-top: 20px;
-    width: 206px;    
 }
 
-.footers {
-    fill: var(--background-text-color);
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
+.social-footer {
+    margin-left: 70px;
 }
-
-
